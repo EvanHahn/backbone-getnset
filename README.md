@@ -13,6 +13,8 @@ Include Backbone (and Underscore) in your page _before_ including this plugin.
     <script src="backbone.js"></script>
     <script src="backbone.accessors.js"></script>
 
+This plugin _does not_ support any loader other than this, because I didn't need it and I'm lazy. Sorry!
+
 ### Configuring getters
 
 Configure your getters by adding a getter function for each attribute:
