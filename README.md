@@ -25,8 +25,8 @@ var MyModel = Backbone.Model.extend({
 	    }
   },
   defaults: {
-    firstName: "James",
-    lastName: "Dean"
+    	firstName: "James",
+    	lastName: "Dean"
   }
 });
 ```
@@ -53,8 +53,8 @@ var MyModel = Backbone.Model.extend({
 	    }
   },
   defaults: {
-    firstName: "Lady",
-    lastName: "Gaga"
+    	firstName: "Lady",
+    	lastName: "Gaga"
   }
 });
 ```
@@ -73,8 +73,8 @@ You can also set multiple attributes too.
 
 ```js
 someModel.set({
-  firstName: "everything",
-  lastName: "NUMBERS"
+		firstName: "everything",
+		lastName: "NUMBERS"
 });
 ```
 
