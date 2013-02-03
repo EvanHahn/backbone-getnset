@@ -1,35 +1,28 @@
-# Backbone.getters.setters
+Backbone.js model accessors
+===========================
 
-A custom getters and setters plugin for [Backbone.js](http://documentcloud.github.com/backbone).
+A getters and setters plugin for [Backbone.js](http://documentcloud.github.com/backbone). Originally taken from [backbone.getters.setters](https://github.com/berzniz/backbone.getters.setters).
+
+The plugin is tested with Backbone version 0.9.10.
 
 ## Getting started
 
-Include Backbone (including underscore.js) in your page before including the Backbone.getters.setters plugin and you're all set to go.
+Include Backbone (and Underscore) in your page _before_ including this plugin.
 
-The plugin is tested with Backbone version 0.9.1
-
-### Configure getters on the Model
-
-Your model should extend Backbone.GSModel instead of Backbone.Model in order to support getters:
-
-```js
-var MyModel = Backbone.GSModel.extend({
-});
-```
+### Configuring getters
 
 Configure your getters by adding a getter function for each attribute:
 
 ```js
-var MyModel = Backbone.GSModel.extend({
+var MyModel = Backbone.Model.extend({
   getters: {
   		fullName: function() {
-		    return this.get('firstName') + ' ' + this.get('lastName');
+		    return this.get("firstName") + " " + this.get("lastName");
 	    }
   },
-
   defaults: {
-    firstName: 'Lady',
-    lastName: 'Gaga'
+    firstName: "James",
+    lastName: "Dean"
   }
 });
 ```
@@ -38,61 +31,52 @@ Then simply call the regular get method:
 
 ```js
 var someModel = new MyModel();
-alert(someModel.get('fullName'));
+someModel.get("fullName");  // => "James Dean"
 ```
 
-The output of the above will be an alert with the text: 'Lady Gaga'.
-
-### Configure setters on the Model
-
-Your model should extend Backbone.GSModel instead of Backbone.Model in order to support setters:
-
-```js
-var MyModel = Backbone.GSModel.extend({
-});
-```
+### Configuring setters
 
 Configure your setters by adding a setter function for each attribute:
 
 ```js
-var MyModel = Backbone.GSModel.extend({
+var MyModel = Backbone.Model.extend({
   setters: {
     	firstName: function(value) {
-		    return value.toUpperCase();
+		      return value.toUpperCase();
 	    },
-      lastName:: function(value) {
-  	    return value.toLowerCase();
+      lastName: function(value) {
+  	      return value.toLowerCase();
 	    }
   },
-
   defaults: {
-    firstName: 'Lady',
-    lastName: 'Gaga'
+    firstName: "Lady",
+    lastName: "Gaga"
   }
 });
 ```
 
-In the above example, the setters were already called by the defaults hash.
+In the above example, the setters were already called by the defaults hash. The value of `firstName` is now `"LADY"` and the value of `lastName` is now `"gaga"`.
 
-The value of 'firstName' is now 'LADY', the value of 'lastName' is now 'gaga'.
-
-You can also call the set method as usual:
+You can also call the `set` method as usual:
 
 ```js
-someModel.set('firstName', 'letters');
+someModel.set("firstName", "letters");
 ```
 
-And now the value of 'firstName' is 'LETTERS'.
+And now the value of `firstName` is `"LETTERS"`.
 
-You can also set multiple attributes as regular:
+You can also set multiple attributes too.
 
 ```js
 someModel.set({
-  'firstName': 'everything',
-  'lastName': 'NUMBERS'
+  firstName: "everything",
+  lastName: "NUMBERS"
 });
 ```
 
-And now the value of 'firstName' is 'EVERYTHING' and the value of 'lastName' is 'numbers'.
+Enjoy!
 
-### ENJOY!
+
+## Licensing
+
+This is licensed under the MIT License.
