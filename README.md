@@ -9,6 +9,10 @@ The plugin is tested with Backbone version 0.9.10.
 
 Include Backbone (and Underscore) in your page _before_ including this plugin.
 
+    <script src="underscore.js"></script>
+    <script src="backbone.js"></script>
+    <script src="backbone.accessors.js"></script>
+
 ### Configuring getters
 
 Configure your getters by adding a getter function for each attribute:
