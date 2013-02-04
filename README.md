@@ -1,5 +1,5 @@
-Backbone.js model accessors
-===========================
+Backbone.js model getters and setters
+=====================================
 
 A tiny getters and setters plugin for [Backbone.js](http://documentcloud.github.com/backbone). Originally taken from [backbone.getters.setters](https://github.com/berzniz/backbone.getters.setters).
 
@@ -11,7 +11,7 @@ Include Backbone (and Underscore) in your page _before_ including this plugin.
 
     <script src="underscore.js"></script>
     <script src="backbone.js"></script>
-    <script src="backbone.accessors.js"></script>
+    <script src="backbone.getnset.js"></script>
 
 This plugin _does not_ support any loader other than this, because I didn't need it and I'm lazy. Sorry!
 
