@@ -1,3 +1,9 @@
+/*
+ * Backbone model getters and setters
+ * License: MIT
+ * http://git.io/ldKjrQ
+ */
+
 (function() {
 
 	var oldGet = Backbone.Model.prototype.get;
