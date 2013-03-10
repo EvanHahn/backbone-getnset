@@ -1,5 +1,6 @@
 /*
  * Backbone model getters and setters
+ * lovingly made by Evan Hahn
  * License: MIT
  * http://git.io/ldKjrQ
  */
