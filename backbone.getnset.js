@@ -5,7 +5,7 @@
  * http://git.io/ldKjrQ
  */
 
-(function() {
+;(function() {
 
 	var oldGet = Backbone.Model.prototype.get;
 	var oldSet = Backbone.Model.prototype.set;
