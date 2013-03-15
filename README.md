@@ -13,7 +13,29 @@ Include Backbone (and Underscore) in your page _before_ including this plugin.
     <script src="backbone.js"></script>
     <script src="backbone.getnset.js"></script>
 
-This plugin _does not_ support any loader other than this, because I didn't need it and I'm lazy. Sorry!
+### RequireJS
+
+Include [RequireJS](http://requirejs.org) and configure it as normal, e.g.:
+
+```javascript
+require.config({
+    paths: {
+        jquery: "lib/jquery",
+        underscore: "lib/underscore",
+        backbone: "lib/backbone",
+        getnset: "lib/backbone.getnset"
+    }
+});
+```
+
+Define your model and include getnset as a dependency:
+```javascript
+define("someModel", ["getnset"], function() {
+    return Backbone.Model.extend({
+        // see next sections for configuration
+    });
+});
+```
 
 ### Configuring getters
 
