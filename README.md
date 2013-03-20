@@ -15,7 +15,7 @@ Include Backbone (and Underscore) in your page _before_ including this plugin.
 
 ### RequireJS
 
-Include [RequireJS](http://requirejs.org) and configure it as normal, e.g.:
+You can also use [RequireJS](http://requirejs.org) and configure it as normal, e.g.:
 
 ```javascript
 require.config({
@@ -37,7 +37,7 @@ define("someModel", ["getnset"], function() {
 });
 ```
 
-### Configuring getters
+## Configuring getters
 
 Configure your getters by adding a getter function for each attribute:
 
@@ -62,7 +62,7 @@ var someModel = new MyModel();
 someModel.get("fullName");  // => "James Dean"
 ```
 
-### Configuring setters
+## Configuring setters
 
 Configure your setters by adding a setter function for each attribute:
 
