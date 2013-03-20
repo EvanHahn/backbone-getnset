@@ -3,7 +3,7 @@ Backbone.js model getters and setters
 
 A tiny getters and setters plugin for [Backbone.js](http://documentcloud.github.com/backbone). Originally taken from [backbone.getters.setters](https://github.com/berzniz/backbone.getters.setters).
 
-The plugin is tested with Backbone version 0.9.10.
+The plugin is tested with Backbone version 1.0.0.
 
 ## Getting started
 
