@@ -75,7 +75,7 @@ var MyModel = Backbone.Model.extend({
         lastName: function(value) {
             return value.toLowerCase();
         }
-      },
+    },
     defaults: {
         firstName: "Lady",
         lastName: "Gaga"
