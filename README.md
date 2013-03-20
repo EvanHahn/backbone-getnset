@@ -43,15 +43,15 @@ Configure your getters by adding a getter function for each attribute:
 
 ```js
 var MyModel = Backbone.Model.extend({
-  getters: {
-  		fullName: function() {
-		    return this.get("firstName") + " " + this.get("lastName");
-	    }
-  },
-  defaults: {
-    	firstName: "James",
-    	lastName: "Dean"
-  }
+    getters: {
+        fullName: function() {
+            return this.get("firstName") + " " + this.get("lastName");
+        }
+    },
+    defaults: {
+        firstName: "James",
+        lastName: "Dean"
+    }
 });
 ```
 
@@ -68,18 +68,18 @@ Configure your setters by adding a setter function for each attribute:
 
 ```js
 var MyModel = Backbone.Model.extend({
-  setters: {
-    	firstName: function(value) {
-		      return value.toUpperCase();
-	    },
-      lastName: function(value) {
-  	      return value.toLowerCase();
-	    }
-  },
-  defaults: {
-    	firstName: "Lady",
-    	lastName: "Gaga"
-  }
+    setters: {
+        firstName: function(value) {
+            return value.toUpperCase();
+        },
+        lastName: function(value) {
+            return value.toLowerCase();
+        }
+      },
+    defaults: {
+        firstName: "Lady",
+        lastName: "Gaga"
+    }
 });
 ```
 
@@ -97,8 +97,8 @@ You can also set multiple attributes too.
 
 ```js
 someModel.set({
-		firstName: "everything",
-		lastName: "NUMBERS"
+    firstName: "everything",
+    lastName: "NUMBERS"
 });
 ```
 
