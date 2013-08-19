@@ -1,0 +1,31 @@
+{
+  "name": "backbone-getnset",
+  "version": "1.0.1",
+  "author": "Evan Hahn",
+  "description": "A tiny getters and setters plugin for Backbone.js models.",
+  "main": "backbone.getnset.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "underscore": "1.5.x",
+  	"backbone": "1.0.x",
+  	"mocha": "1.12.x",
+  	"expect.js": "0.2.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/EvanHahn/backbone-getnset.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EvanHahn/backbone-getnset/issues"
+  },
+  "keywords": [
+    "backbone",
+    "getter",
+    "setter",
+    "accessor",
+    "mutator"
+  ],
+  "license": "MIT"
+}
