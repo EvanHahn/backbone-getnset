@@ -1,0 +1,13 @@
+{
+  "name": "backbone-getnset",
+  "version": "1.0.1",
+  "main": "backbone.getnset.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests"
+  ]
+}
